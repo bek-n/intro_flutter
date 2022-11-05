@@ -14,8 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        
-        primarySwatch: Colors.brown,
+        primarySwatch: Colors.indigo,
       ),
       home: const MyHomePage(title: 'Flutter Firssst project'),
     );
@@ -25,7 +24,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
-  
   final String title;
 
   @override
@@ -37,21 +35,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-     
-      _counter++;
+      _counter += 1500;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: AppBar(
-        
         title: Text(widget.title),
       ),
       body: Center(
-        
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -75,3 +69,4 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 
+//?  Hi i am bek xaxax
