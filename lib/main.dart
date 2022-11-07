@@ -21,7 +21,9 @@ class MyApp extends StatelessWidget {
                     width: 300,
                     decoration: const BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(20),
+                            topRight: Radius.circular(20))),
                     child: const Center(
                       child: Text(
                         'R',
@@ -35,9 +37,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     width: 300,
                     height: 100,
-                    decoration: const BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                    color: Colors.blue,
                     child: const Center(
                       child: Text(
                         'U',
@@ -53,7 +53,9 @@ class MyApp extends StatelessWidget {
                     width: 300,
                     decoration: const BoxDecoration(
                         color: Colors.red,
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                        borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(20),
+                            bottomRight: Radius.circular(20))),
                     child: const Center(
                       child: Text(
                         'S',
