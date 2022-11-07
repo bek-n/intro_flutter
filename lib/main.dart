@@ -20,13 +20,13 @@ class MyApp extends StatelessWidget {
                     height: 500,
                     width: 100,
                     decoration: const BoxDecoration(
-                        color: Colors.blue,
+                        color: Color(0xFF01579B),
                         borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(20),
                             topLeft: Radius.circular(20))),
                     child: const Center(
                       child: Text(
-                        'F',
+                        'M',
                         style: TextStyle(
                             decoration: TextDecoration.none,
                             color: Colors.black),
@@ -37,10 +37,10 @@ class MyApp extends StatelessWidget {
                   Container(
                     width: 100,
                     height: 500,
-                    color: Colors.white,
+                    color: Color(0xFF0277BD),
                     child: const Center(
                       child: Text(
-                        'R',
+                        'U',
                         style: TextStyle(
                             decoration: TextDecoration.none,
                             color: Colors.black),
@@ -52,13 +52,13 @@ class MyApp extends StatelessWidget {
                     height: 500,
                     width: 100,
                     decoration: const BoxDecoration(
-                        color: Colors.red,
+                        color: Color(0xFF0288D1),
                         borderRadius: BorderRadius.only(
                             topRight: Radius.circular(20),
                             bottomRight: Radius.circular(20))),
                     child: const Center(
                       child: Text(
-                        'A',
+                        'X',
                         style: TextStyle(
                           decoration: TextDecoration.none,
                           color: Colors.black,
