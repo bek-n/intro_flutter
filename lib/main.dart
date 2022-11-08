@@ -14,59 +14,47 @@ class MyApp extends StatelessWidget {
             color: Colors.black,
             child: Center(
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    height: 500,
-                    width: 100,
-                    decoration: const BoxDecoration(
-                        color: Color(0xFF01579B),
-                        borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(20),
-                            topLeft: Radius.circular(20))),
-                    child: const Center(
-                      child: Text(
-                        'M',
-                        style: TextStyle(
-                            decoration: TextDecoration.none,
-                            color: Colors.black),
-                        textAlign: TextAlign.center,
+                  Row(
+                    children: [
+                      Container(
+                        height: 400,
+                        width: 150,
+                        color: Colors.blue,
                       ),
-                    ),
-                  ),
-                  Container(
-                    width: 100,
-                    height: 500,
-                    color: Color(0xFF0277BD),
-                    child: const Center(
-                      child: Text(
-                        'U',
-                        style: TextStyle(
-                            decoration: TextDecoration.none,
-                            color: Colors.black),
-                        textAlign: TextAlign.center,
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            height: 100,
+                            width: 100,
+                            color: Colors.red,
+                          ),
+                          Container(
+                            height: 100,
+                            width: 100,
+                            color: Colors.yellow,
+                          ),
+                        ],
                       ),
-                    ),
+                    ],
                   ),
-                  Container(
-                    height: 500,
-                    width: 100,
-                    decoration: const BoxDecoration(
-                        color: Color(0xFF0288D1),
-                        borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(20),
-                            bottomRight: Radius.circular(20))),
-                    child: const Center(
-                      child: Text(
-                        'X',
-                        style: TextStyle(
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                        ),
-                        textAlign: TextAlign.center,
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 100,
+                        width: 100,
+                        color: Colors.yellow,
                       ),
-                    ),
-                  ),
+                      Container(
+                        height: 100,
+                        width: 100,
+                        color: Colors.green,
+                      ),
+                    ],
+                  )
                 ],
               ),
             )));
