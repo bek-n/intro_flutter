@@ -11,33 +11,25 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Container(
-      color: Colors.black,
+      color: Colors.blue,
       child: Center(
         child: Stack(
           children: [
             Align(
               alignment: Alignment.center,
               child: Container(
-                height: 300,
-                width: 300,
-                color: Colors.red,
-              ),
-            ),
-            Align(
-              alignment: Alignment.center,
-              child: Container(
-                height: 200,
-                width: 200,
+                height: 4000,
+                width: 100,
                 color: Colors.yellow,
               ),
             ),
             Positioned(
-              right: 50,
-              top: 100,
+              bottom: 500,
+              right: 0,
               child: Container(
-                height: 50,
-                width: 50,
-                color: Colors.blue,
+                height: 100,
+                width: 700,
+                color: Colors.yellow,
               ),
             )
           ],
