@@ -11,60 +11,54 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Container(
-      color: Colors.green,
+      color: Colors.black,
       child: Center(
-        child: Stack(
-          children: [
-            Positioned(
-              left: 300,
-              child: Container(
-                height: 4000,
-                width: 200,
-                color: Colors.yellow,
+          child: Stack(
+        children: [
+          Positioned(
+            top: 100,
+            left: 40,
+            child: Container(
+              color: Colors.green,
+              height: 300,
+              width: 300,
+              child: const Text(
+                'Green',
+                style: TextStyle(
+                    color: Colors.limeAccent, decoration: TextDecoration.none),
               ),
             ),
-            Positioned(
-              top: 850,
-              right: 0,
-              child: Container(
-                height: 500,
-                width: 1000,
-                color: Colors.yellow,
+          ),
+          Positioned(
+            top: 170,
+            left: 80,
+            child: Container(
+              color: Colors.red,
+              height: 300,
+              width: 300,
+              child: const Text(
+                'Red',
+                style: TextStyle(
+                    color: Colors.lime, decoration: TextDecoration.none),
               ),
             ),
-            Positioned(
-              left: 20,
-              top: 200,
-              right: 150,
-              child: Container(
-                height: 500,
-                width: 200,
-                color: Colors.yellow,
+          ),
+          Positioned(
+            top: 250,
+            left: 150,
+            child: Container(
+              color: Colors.purple,
+              height: 300,
+              width: 300,
+              child: const Text(
+                'Purple',
+                style: TextStyle(
+                    color: Colors.amber, decoration: TextDecoration.none),
               ),
             ),
-            Positioned(
-              left: 80,
-              top: 230,
-              right: 200,
-              child: Container(
-                height: 320,
-                width: 0,
-                color: Colors.blue,
-              ),
-            ),
-            Positioned(
-              left: 120,
-              top: 240,
-              right: 240,
-              child: Container(
-                height: 200,
-                width: 3,
-                color: Colors.green,
-              ),
-            )
-          ],
-        ),
-      ),
+          )
+        ],
+      )),
     ));
   }
 }
