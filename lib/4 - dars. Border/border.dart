@@ -25,9 +25,24 @@ class MyApp extends StatelessWidget {
                     border: Border.all(color: Colors.red, width: 10)),
                 child: const Center(
                   child: Text(
-                    'Hello World',
+                    'Bek',
                     style: TextStyle(
-                        decoration: TextDecoration.none, fontSize: 20),
+                        decoration: TextDecoration.none,
+                        fontSize: 30,
+                        shadows: [
+                          Shadow(
+                              color: Colors.green,
+                              blurRadius: 12,
+                              offset: Offset(0, 20)),
+                          Shadow(
+                              color: Colors.orange,
+                              blurRadius: 12,
+                              offset: Offset(0, 40)),
+                          Shadow(
+                              color: Colors.teal,
+                              blurRadius: 12,
+                              offset: Offset(0, 60))
+                        ]),
                   ),
                 ),
               ),
