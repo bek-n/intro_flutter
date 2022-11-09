@@ -7,16 +7,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Container(
-            color: Colors.white,
+            color: Colors.black,
             child: Center(
               child: Container(
                 width: 200,
                 height: 200,
                 decoration: BoxDecoration(
                     color: Colors.yellow,
+                    boxShadow: const [
+                      BoxShadow(
+                          color: Colors.blue,
+                          blurRadius: 30,
+                          spreadRadius: 20,
+                          offset: Offset(10, 5))
+                    ],
                     borderRadius: BorderRadius.all(Radius.circular(32)),
-                    border: Border.all(color: Colors.black, width: 10)),
-                child: Center(
+                    border: Border.all(color: Colors.red, width: 10)),
+                child: const Center(
                   child: Text(
                     'Hello World',
                     style: TextStyle(
