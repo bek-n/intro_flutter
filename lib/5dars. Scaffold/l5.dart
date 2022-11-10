@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class scaff extends StatelessWidget {
@@ -25,41 +27,46 @@ class scaff extends StatelessWidget {
       //     size: 35,
       //   ),
       // ),
-      bottomNavigationBar: Row(
-        children: [
-          Container(
-            color: Colors.red,
-            height: 100,
-            width: 100,
-            child: Icon(Icons.mail, color: Colors.white),
-          ),
-          Container(
-            color: Colors.red,
-            height: 100,
-            width: 100,
-            child: Icon(Icons.telegram, color: Colors.white),
-          ),
-          Container(
-            color: Colors.red,
-            height: 100,
-            width: 100,
-            child: Icon(Icons.call, color: Colors.white),
-          ),
-          Container(
-            color: Colors.red,
-            height: 100,
-            width: 130,
-            child: Icon(
-              Icons.call_end,
-              color: Colors.white,
-            ),
-          )
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        selectedLabelStyle: TextStyle(color: Colors.yellow),
+        unselectedLabelStyle: TextStyle(color: Colors.yellow),
+        type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+                color: Colors.yellow,
+              ),
+              label: 'Home'),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.add_box,
+                color: Colors.yellow,
+              ),
+              label: 'Add'),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.search,
+                color: Colors.yellow,
+              ),
+              label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+                color: Colors.yellow,
+              ),
+              label: 'Search'),
         ],
       ),
-      backgroundColor: Colors.black,
+
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
         title: const Text('First Scsaffold'),
+        leading: Icon(
+          Icons.menu_book,
+          color: Colors.black,
+        ),
       ),
     ));
   }
