@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '5dars. Scaffold/exercise.dart';
-import '5dars. Scaffold/l5.dart';
+import '12 November, Takrorlash/trening.dart';
+import '6 Dars. Text input, Images/one.dart';
 
 void main() {
-  runApp(const Ex());
+  runApp(const takrorlash());
 }
