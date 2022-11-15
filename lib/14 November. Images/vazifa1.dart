@@ -84,12 +84,14 @@ class vazifa extends StatelessWidget {
               decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      blurRadius: 10,
+                      blurRadius: 6.16,
                       offset: Offset(0, 3.8),
+                      color: Color(0xffD1AE52).withOpacity(0.14),
                     ),
                     BoxShadow(
+                      blurRadius: 12.31,
                       offset: Offset(0, 6.16),
-                      // color: Color(0xffD1AE52),
+                      color: Color(0xffD1AE52).withOpacity(0.14),
                     )
                   ],
                   color: Color(0xffD1AE52),

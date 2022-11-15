@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 
-import '14 November. Images/class.dart';
-import '14 November. Images/vazifa1.dart';
+
+import '15 November. Padding/class.dart';
+import '15 November. Padding/mashq.dart';
 
 
 void main() {
-  runApp(const vazifa());
+  runApp(const mashq());
 }
