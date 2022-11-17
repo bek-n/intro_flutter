@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class mashq1 extends StatelessWidget {
   const mashq1({super.key});
@@ -29,7 +27,7 @@ class mashq1 extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 20),
+              padding: EdgeInsets.only(top: 40),
               child: Text(
                 'Restaurents',
                 style: TextStyle(fontSize: 30),
@@ -65,12 +63,12 @@ class mashq1 extends StatelessWidget {
                                   ),
                                   Padding(
                                     padding:
-                                        EdgeInsets.only(right: 100, top: 30),
+                                        EdgeInsets.only(right: 110, top: 20),
                                     child: Text(
                                       'Adress',
                                       style: TextStyle(
-                                          fontSize: 23,
-                                          fontWeight: FontWeight.bold),
+                                        fontSize: 23,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -81,7 +79,7 @@ class mashq1 extends StatelessWidget {
                       )),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 50),
+              padding: EdgeInsets.only(top: 70),
               child: Text(
                 'Dishes',
                 style: TextStyle(fontSize: 30),
