@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 
-import '22 November. StateFull widget/class.dart';
-import '22 November. StateFull widget/class1.dart';
-// import '17 November. Gridview/class.dart';
-// import '17 November. Gridview/mashq_wrap.dart';
+
+import '25 November.Bottom NAvigation Bar/sinf.dart';
+
+
+
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: sinf1(),
+      home: sinf25(),
     );
   }
 }
