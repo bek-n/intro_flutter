@@ -30,9 +30,10 @@ class _sinf25State extends State<sinf25> {
         children: lst,
       ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.purple,
           type: BottomNavigationBarType.fixed,
           currentIndex: a,
-          onTap: (index) {
+          onTap: (index) { 
             a = index;
             _pageController.animateToPage(a,
                 curve: Curves.decelerate,

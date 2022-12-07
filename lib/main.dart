@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 
 
 
-import '25 November.Bottom NAvigation Bar/sinf.dart';
+
+import '2 December/login page.dart';
+import '7 December. Packages and Plugins/class7.dart';
+
 
 
 
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: sinf25(),
+      home: Class7(),
     );
   }
 }
