@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
@@ -48,7 +49,15 @@ class _Class7State extends State<Class7> {
                   lastDate: DateTime.now().add(Duration(days: 365 * 10)));
             }),
             child: Text('Chosse the date'),
-          )
+          ),
+          ElevatedButton(
+              onPressed: (() {
+                showModalBottomSheet(
+                    context: context,
+                    builder: ((context) => CupertinoTimerPicker(
+                        onTimerDurationChanged: ((value) => print('$value')))));
+              }),
+              child: Text('Choose pls'))
         ],
       ),
     );
