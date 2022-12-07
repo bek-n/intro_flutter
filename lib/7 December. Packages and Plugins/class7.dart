@@ -63,6 +63,7 @@ class _Class7State extends State<Class7> {
                 showModalBottomSheet(
                     context: context,
                     builder: ((context) => CupertinoDatePicker(
+                        mode: CupertinoDatePickerMode.date,
                         use24hFormat: true,
                         onDateTimeChanged: ((value) => print('$value')))));
               }),
