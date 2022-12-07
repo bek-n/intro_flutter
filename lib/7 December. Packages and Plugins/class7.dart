@@ -57,7 +57,16 @@ class _Class7State extends State<Class7> {
                     builder: ((context) => CupertinoTimerPicker(
                         onTimerDurationChanged: ((value) => print('$value')))));
               }),
-              child: Text('Choose pls'))
+              child: Text('Choose time')),
+          ElevatedButton(
+              onPressed: (() {
+                showModalBottomSheet(
+                    context: context,
+                    builder: ((context) => CupertinoDatePicker(
+                        use24hFormat: true,
+                        onDateTimeChanged: ((value) => print('$value')))));
+              }),
+              child: Text('Choose date'))
         ],
       ),
     );
